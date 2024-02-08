@@ -998,7 +998,8 @@ function sortable(sortableElements, options) {
                     origin: {
                         elementIndex: originElementIndex,
                         index: originIndex,
-                        container: originContainer
+                        container: originContainer,
+                        srcEvent: e
                     },
                     item: dragging,
                     originalTarget: target
@@ -1022,7 +1023,8 @@ function sortable(sortableElements, options) {
                         origin: {
                             elementIndex: originElementIndex,
                             index: originIndex,
-                            container: originContainer
+                            container: originContainer,
+                            srcEvent: e
                         },
                         destination: {
                             container: sortableContainer,
@@ -1045,7 +1047,8 @@ function sortable(sortableElements, options) {
                                 origin: {
                                     elementIndex: originElementIndex,
                                     index: originIndex,
-                                    container: sortableContainer
+                                    container: sortableContainer,
+                                    srcEvent: e
                                 },
                                 item: dragging,
                                 originalTarget: target
@@ -1086,7 +1089,8 @@ function sortable(sortableElements, options) {
                     origin: {
                         elementIndex: originElementIndex,
                         index: originIndex,
-                        container: originContainer
+                        container: originContainer,
+                        srcEvent: e
                     },
                     item: dragging
                 }
@@ -1136,7 +1140,8 @@ function sortable(sortableElements, options) {
                     origin: {
                         elementIndex: originElementIndex,
                         index: originIndex,
-                        container: originContainer
+                        container: originContainer,
+                        srcEvent: e
                     },
                     item: dragging
                 }
@@ -1165,7 +1170,8 @@ function sortable(sortableElements, options) {
                             index: originIndex,
                             container: originContainer,
                             itemsBeforeUpdate: originItemsBeforeUpdate,
-                            items: originItems
+                            items: originItems,
+                            srcEvent: e
                         },
                         destination: {
                             index: destinationIndex,
