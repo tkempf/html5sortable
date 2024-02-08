@@ -359,7 +359,8 @@ export default function sortable (sortableElements, options: configuration|objec
           origin: {
             elementIndex: originElementIndex,
             index: originIndex,
-            container: originContainer
+            container: originContainer,
+            srcEvent: e
           },
           item: dragging,
           originalTarget: target
@@ -386,7 +387,8 @@ export default function sortable (sortableElements, options: configuration|objec
             origin: {
               elementIndex: originElementIndex,
               index: originIndex,
-              container: originContainer
+              container: originContainer,
+              srcEvent: e
             },
             destination: {
               container: sortableContainer,
@@ -410,7 +412,8 @@ export default function sortable (sortableElements, options: configuration|objec
                 origin: {
                   elementIndex: originElementIndex,
                   index: originIndex,
-                  container: sortableContainer
+                  container: sortableContainer,
+                  srcEvent: e
                 },
                 item: dragging,
                 originalTarget: target
@@ -456,7 +459,8 @@ export default function sortable (sortableElements, options: configuration|objec
           origin: {
             elementIndex: originElementIndex,
             index: originIndex,
-            container: originContainer
+            container: originContainer,
+            srcEvent: e
           },
           item: dragging
         }
@@ -508,7 +512,8 @@ export default function sortable (sortableElements, options: configuration|objec
           origin: {
             elementIndex: originElementIndex,
             index: originIndex,
-            container: originContainer
+            container: originContainer,
+            srcEvent: e
           },
           item: dragging
         }
@@ -540,7 +545,8 @@ export default function sortable (sortableElements, options: configuration|objec
               index: originIndex,
               container: originContainer,
               itemsBeforeUpdate: originItemsBeforeUpdate,
-              items: originItems
+              items: originItems,
+              srcEvent: e
             },
             destination: {
               index: destinationIndex,
